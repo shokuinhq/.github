@@ -1,0 +1,66 @@
+name: Bug
+description: Something behaves differently from what was intended.
+type: Bug
+projects: ["shokuinhq/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The title states what goes wrong, in plain words: "Registration reveals whether an email address is already registered", not "Fix registration bug".
+        If it affects who can access what, add the `security` label. Size and priority are set at triage, in the Shokuin project.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: The problem, who has it, and how fixing it serves the current goal.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps anyone can follow. Name the realm, the organization and the setting involved.
+      placeholder: |
+        1. In an application realm with sign-up open, ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: What happens instead. Link the code that does it (file and line at a commit) when you know it.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who is affected, how often it can happen, and what it costs them.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: A checklist of results anyone can observe. The work stops when every item holds.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this issue does not do.
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: The documentation pages, decisions, issues and pull requests this relates to.

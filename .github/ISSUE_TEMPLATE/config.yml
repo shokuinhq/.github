@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: An idea, a gap or a finding nobody has decided about yet
+    url: https://github.com/orgs/shokuinhq/projects/1
+    about: Capture it as a draft item in the Shokuin project instead. Triage turns a kept draft into an issue with one of these forms.

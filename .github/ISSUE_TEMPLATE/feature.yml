@@ -1,0 +1,36 @@
+name: Feature
+description: A new capability a user or a customer can use.
+type: Feature
+projects: ["shokuinhq/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The title states the outcome, not the activity: "Organization admin can register a SAML identity provider", not "SAML support".
+        If it changes who can access what, add the `security` label. Size and priority are set at triage, in the Shokuin project.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: The problem, who has it, and how solving it serves the current goal.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: A checklist of results anyone can observe. The work stops when every item holds.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this issue does not do.
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: The product model and documentation pages, decisions, issues and pull requests this relates to.

@@ -1,0 +1,36 @@
+name: Task
+description: Everything else, such as maintenance, refactoring, documentation and infrastructure.
+type: Task
+projects: ["shokuinhq/1"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The title states the outcome in plain words.
+        Size and priority are set at triage, in the Shokuin project. Split an L item into sub-issues before it moves to Now.
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What this changes, and how it serves the current goal.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: A checklist of results anyone can observe. The work stops when every item holds.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What this issue does not do.
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Related documentation pages, decisions, issues and pull requests.
